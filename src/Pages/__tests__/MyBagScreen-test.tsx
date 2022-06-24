@@ -1,15 +1,12 @@
 /**
  * @format
  */
-
-import 'react-native';
 import React from 'react';
-import App from '../src/App';
-
 // Note: test renderer must be required after react-native.
 import renderer from 'react-test-renderer';
+import MyBagScreen from '../MyBagScreen';
 
-it('renders correctly', () => {
-  const tree = renderer.create(<App />).toJSON();
+it('MyBagScreen renders correctly', () => {
+  const tree = renderer.create(<MyBagScreen />).toJSON();
   expect(tree).toMatchSnapshot();
 });
